@@ -19,6 +19,9 @@ body {
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background: #1e2939;
   width: 370px;
   padding-top: 40px;
@@ -33,10 +36,10 @@ body {
   padding-left: 90px;
   padding-right: 90px;
 }
-.contacts {
-  margin-top: 60px;
-  margin-bottom: 55px;
-}
+/* .contacts {
+  margin-top: 60px; 
+ margin-bottom: 55px;
+} */
 .sidebar-titls {
   font-size: 22px;
   font-weight: 700;
@@ -44,7 +47,7 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
   margin-left: 40px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 .contact-link {
   font-size: 14px;
@@ -90,7 +93,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-right: 170px;
+  margin-right: 120px;
 }
 .section {
   font-size: 22px;
@@ -102,7 +105,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-right: 170px;
+  margin-right: 120px;
   color: #595959;
 }
 .time-on-work {
@@ -165,4 +168,9 @@ body {
 }
 .my-education {
   padding-bottom: 100px;
+}
+
+.projects,
+.experiance {
+  margin-right: 120px;
 }
