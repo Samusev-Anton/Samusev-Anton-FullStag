@@ -3,36 +3,59 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+svg:not(:root) {
+  overflow: visible;
+}
+
+:root > svg:target {
+  display: block;
+}
+
+li {
+  margin-left: 20px;
+}
 body {
   background: #f5f7fa;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
   font-family: Montserrat;
 }
+
 .first {
-  background: #ffffff;
+  background: #c4c6d9;
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
+
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: #1e2939;
-  width: 370px;
+  /* background: #2f353b; */
+  background-color: #4c5866;
+  min-width: 400px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+.wrapper-foto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mainfoto {
-  width: 370px;
+  border-radius: 50%;
+  display: block;
+  width: 270px;
 }
 .about-me {
-  padding-top: 110px;
-  padding-bottom: 110p;
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-left: 90px;
   padding-right: 90px;
 }
@@ -40,72 +63,122 @@ body {
   margin-top: 60px; 
  margin-bottom: 55px;
 } */
+.contacts {
+  padding: 25px 0 25px 30px;
+  margin-left: 40px;
+
+  background: #2f353b;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.67);
+}
+
 .sidebar-titls {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-left: 40px;
   /* margin-top: 60px; */
 }
+
+.contact_box {
+  display: flex;
+  align-items: flex-start;
+  height: 25px;
+}
+
+.contact_img {
+  align-self: flex-end;
+}
+
 .contact-link {
+  text-decoration: none;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #b3b6bc;
 }
+
+.contact-link:hover {
+  color: orange;
+}
+
 .contacts-type {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   color: #ffffff;
-  margin-right: 10px;
-  margin-left: 40px;
 }
 
 .skills-item {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 54px;
   color: #ff6b08;
 }
 .skills-text {
   color: #b3b6bc;
 }
-.name-profession {
-  margin-bottom: 65px;
+
+.about-me {
+  background: linear-gradient(to right, #f9f7f7 0%, #dedede 35%, #ada4a3 81%);
 }
+/* .name-profession {
+  margin-bottom: 65px;
+} */
 .my-profession {
-  font-size: 14px;
+  text-shadow: 13px 0px 11px rgba(0, 0, 0, 0.64);
+  font-size: 22px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 30px;
   margin-bottom: 25px;
+  text-align: center;
+  color: #ff6b08;
 }
 .name {
+  text-shadow: 13px 0px 11px rgba(0, 0, 0, 0.64);
   font-size: 45px;
   font-weight: 700;
   line-height: 89px;
   margin-bottom: 25px;
+  text-align: center;
 }
 .description {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-right: 120px;
+  margin-right: 40px;
 }
 .section {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 45px;
+  margin-bottom: 20px;
+  text-align: center;
 }
+
+.summary {
+  margin-bottom: 20px;
+  padding: 25px 0 25px 30px;
+  background: #f5f5f5;
+  /* width: 100%; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.67);
+}
+
+.summary_title {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
 .responsibilities {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-right: 120px;
   color: #595959;
 }
 .time-on-work {
@@ -129,13 +202,40 @@ body {
   color: black;
   font-weight: 500;
 }
+
+.develop_item:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+}
+.develop_box {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+}
 .development {
+  text-decoration: none;
+  padding: 6px 5px;
+  background-color: #595959;
+  border-radius: 4px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #595959;
+  color: #c4c6d9;
   margin-bottom: 5px;
 }
+.development:hover {
+  color: #ff6b08;
+  box-shadow: 0px 1px 7px 3px rgba(11, 3, 1, 0.68);
+}
+
+.develop_img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
 .all-devel {
   color: #000;
   margin-top: 10px;
@@ -157,20 +257,29 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 10px;
+}
+.education_list {
+  margin-bottom: 10px;
 }
 .specialty {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 .my-education {
-  padding-bottom: 100px;
+  padding: 25px 0 25px 30px;
+  background: #f5f5f5;
+  /* width: 90%; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.67);
 }
 
 .projects,
 .experiance {
-  margin-right: 120px;
+  padding: 25px 15px 25px 30px;
+  background: #f5f5f5;
+  /* width: 90%; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.67);
+  margin-bottom: 20px;
 }
