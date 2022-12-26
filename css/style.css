@@ -124,24 +124,22 @@ body {
 .about-me {
   background: linear-gradient(to right, #f9f7f7 0%, #dedede 35%, #ada4a3 81%);
 }
-/* .name-profession {
-  margin-bottom: 65px;
-} */
+
+.name {
+  text-shadow: 13px 0px 11px rgba(0, 0, 0, 0.64);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 69px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 .my-profession {
   text-shadow: 13px 0px 11px rgba(0, 0, 0, 0.64);
   font-size: 22px;
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 25px;
-  text-align: center;
-  color: #ff6b08;
-}
-.name {
-  text-shadow: 13px 0px 11px rgba(0, 0, 0, 0.64);
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 89px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   text-align: center;
 }
 .description {
@@ -216,12 +214,13 @@ body {
 .development {
   text-decoration: none;
   padding: 6px 5px;
-  background-color: #595959;
-  border-radius: 4px;
+  border: 2px solid #2f353b;
+  border-radius: 8px;
+  background-color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #c4c6d9;
+  color: #2f353b;
   margin-bottom: 5px;
 }
 .development:hover {
@@ -246,6 +245,18 @@ body {
   font-weight: 400;
   line-height: 24px;
 }
+
+.examples {
+  margin-top: 30px;
+}
+
+.examples_project {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .yellow-text {
   color: #ff6b08;
   font-size: 16px;
